@@ -1,0 +1,19 @@
+{
+  "name": "counter-call",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "asbuild:optimized": "asc assembly/index.ts -b dist/counter-call.wasm --validate --optimize --use abort=",
+    "asbuild": "npm run asbuild:optimized",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "assemblyscript": "^0.9.1"
+  },
+  "dependencies": {
+    "casper-contract": "^1.2.0"
+  }
+}
